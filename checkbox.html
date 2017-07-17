@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>checkbox</title>
+<script src="js/jquery.js"></script>
+<script src="js/icheck.js"></script>
+</head>
+<body>
+
+<input type="checkbox">1
+<input type="checkbox">2
+
+<input type="checkbox" id="three">3
+<input type="checkbox" id="four">4
+<script type="text/javascript">
+$("#three").click(function(){
+$('input').iCheck('check'); 
+});
+
+$("#four").click(function(){
+	$('input').iCheck('uncheck'); 
+	});
+</script>
+</body>
+</html>
